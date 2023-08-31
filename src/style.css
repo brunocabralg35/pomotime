@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Lato:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ADLaM Display", cursive;
+  font-weight: 400;
+  /* font-family: 'Lato', sans-serif; */
+  background-color: rgb(140, 99, 164);
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.working {
+  background-color: rgb(186, 73, 73);
+}
+
+.resting {
+  background-color: rgb(56, 133, 138);
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background-color: rgba(255, 255, 255, 0.158);
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  color: white;
+
+  & h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  & .timer {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  & .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  & button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0px;
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto;
+    font-family: "ADLaM Display", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+
+    &:hover {
+      box-shadow: rgb(182, 182, 182) 0px 6px 0px;
+    }
+  }
+
+  & .details {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.working .pomodoro button {
+  color: rgb(186, 73, 73);
+}
+
+.pomodoro button {
+  color: rgb(140, 99, 164);
+}
+
+.resting .pomodoro button {
+  color: rgb(56, 133, 138);
+}
